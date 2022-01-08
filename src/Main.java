@@ -1,10 +1,12 @@
+import org.junit.Assert;
+
 public class Main {
     public static void main(String[] args) {
         testMultiplication();
     }
-    public void testMultiplication(){
-        Dollar fieve = new Dollar(5);
+    public static void testMultiplication(){
+        Dollar five = new Dollar(5);
         five.times(2);
-        assertEquals(10, five.amount);
+        Assert.assertEquals(10, five.amount);
     }
 }
